@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Produk Marketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Dashboard Bisnis Digital Marketing</h2>
+        <button id="logoutButton">Logout</button>
+    </header>
+
+    <div class="main-content">
+        <h3>Unggah Gambar Produk Baru</h3>
+        <form id="uploadForm">
+            <div class="form-group">
+                <label for="productName">Nama Produk:</label>
+                <input type="text" id="productName" required>
+            </div>
+            <div class="form-group">
+                <label for="productImage">Pilih Gambar Produk:</label>
+                <input type="file" id="productImage" accept="image/*" required>
+            </div>
+            <button type="submit">Unggah Produk</button>
+        </form>
+
+        <hr>
+
+        <h3>Daftar Produk yang Diunggah (Preview Lokal)</h3>
+        <div id="productGallery" class="gallery">
+            </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
